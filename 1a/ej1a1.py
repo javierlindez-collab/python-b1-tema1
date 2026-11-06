@@ -40,8 +40,22 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-    # Write here your code
-    pass
+    #JAVIER LINDEZ
+    #06/11/2026
+    i = 2   #Inicializamos contador de números de la serie de fibonacci
+    # Inicializamos los dos primeros números de la serie
+    n = [0, 1, 0] # Lista con las posiciones n, n-1 y n-2 (n = n[0]; n-1 = n[1]; n-2 = n[2])
+
+    while(i <= fibonacci_number):
+        n[0] = n[1] + n[2]
+        n[2] = n[1]
+        n[1] = n[0]
+        i += 1
+    
+    resultado = n[0]
+
+    return(resultado)
+
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
