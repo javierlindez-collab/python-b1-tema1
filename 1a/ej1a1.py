@@ -41,11 +41,17 @@ Exemple:
 
 def fibonacci(fibonacci_number):
     #JAVIER LINDEZ
-    #06/11/2026
+    #07/11/2026
+
+    if type(fibonacci_number) != int:
+        raise ValueError("El número debe ser entero.")
+    elif fibonacci_number < 0:
+        raise ValueError("El número debe ser entero y positivo.")
 
     i = 2   #Inicializamos contador de números de la serie de fibonacci
-    # Inicializamos los dos primeros números de la serie
-    n = [0, 1, 0] # Lista con las posiciones n, n-1 y n-2 (n = n[0]; n-1 = n[1]; n-2 = n[2])
+    # Creo una lista con 3 posiciones que irán guardando el número actual y los dos anteriores
+    # para irlos acumulando en la tercera posición n[2]
+    n = [0, 1, 0]
 
     if(fibonacci_number < 2):
         return n[fibonacci_number]
@@ -56,11 +62,9 @@ def fibonacci(fibonacci_number):
         n[1] = n[2]
         i += 1
     
-    resultado = n[2]
-
-    return(resultado)
+    return(n[2])
     
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-print(fibonacci(0))
+# print(fibonacci(10))
