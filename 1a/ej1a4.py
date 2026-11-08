@@ -34,8 +34,19 @@ Exemple:
 '''
 
 def count_vowels(text_chain:str):
-    # Write here your code
-    pass
+    # Javier Líndez
+    # 08/11/2026
+    # Cuenta el número de vocales de una cadena de texto
+
+    allowed_vowels = "AEIOUaeiou"
+    vowels_counter = 0
+
+    for char in text_chain:
+        if char in allowed_vowels:
+            vowels_counter += 1
+
+    return vowels_counter
+
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
