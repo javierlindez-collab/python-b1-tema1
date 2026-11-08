@@ -42,8 +42,24 @@ Exemple:
 '''
 
 def sum_odd_numbers(list_numbers):
-    # Write here your code
-    pass
+    """ JAVIER LINDEZ
+        8/11/2026
+        Calcula la suma de los números impares de una lista de números enteros positivos
+    """
+
+    acumula_impares = 0
+    for n in list_numbers:
+        if not isinstance(n, int):
+            raise ValueError("En la lista solo puede haber números enteros")
+        elif n < 0:
+            raise ValueError("Los números de la lista deben ser enteros y positivos")
+        else:
+            if(n % 2 != 0):
+                acumula_impares += n
+
+    return acumula_impares
+
+    
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
