@@ -32,8 +32,16 @@ Exemple:
 '''
 
 def invert_text(text_chain:str):
-    # Write here your code
-    pass
+    # Javier Líndez
+    # 08/11/2026
+    # Invertir un texto
+
+    salida = ""
+    for n in range(len(text_chain)):
+        salida = salida + text_chain[len(text_chain) - n - 1]
+
+    return salida
+
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
