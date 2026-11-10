@@ -66,8 +66,17 @@ Exemple:
 import math
 
 def calculate_angle(angle):
-    # Write here your code
-    pass
+    """ Javier Líndez
+        10/11/2026
+        Calcular el seno de un ángulo dado en grados
+    """
+
+    angle_int = int(angle)
+    angle_rad = math.radians(angle_int)     # Pasamos el ángulo de grados a radianes
+    sinus = math.sin(angle_rad)             # Calculamos el seno del ángulo, con el ángulo en radianes
+    sinus = round(sinus, 2)                 # Redondeamos a 2 decimales
+
+    return sinus
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
