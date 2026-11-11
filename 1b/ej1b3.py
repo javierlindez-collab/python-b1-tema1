@@ -51,8 +51,15 @@ import matplotlib.pyplot as plt
 # Esta función deberá configurar la gráfica en la variable plt
 # Aquesta funció haurà de configurar la gràfica en la variable plt
 def line_graph(x, y):
-    # Write here your code
-    pass
+    """ Javier Líndez
+        11/11/2026
+        Configura una gráfica en la variable plt
+    """
+    plt.plot(x, y)
+    plt.title("Graph")
+    plt.xlabel("Axis X")
+    plt.ylabel("Axis Y")
+    plt.grid(True)
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
