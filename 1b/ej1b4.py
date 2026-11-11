@@ -65,8 +65,24 @@ Exemple:
 import numpy as np
 
 def results(list_numbers):
-    # Write here your code
-    pass
+    """ Javier Líndez
+        11/11/2026
+        Promedio y Desviación estándar con la librería Numpy
+    """
+    # Convertir la lista en array
+    array_numbers = np.array(list_numbers)
+
+    # Promedio (Average)
+    average = round(np.mean(array_numbers), 2)
+
+    # Desviación estándar (Standard deviation)
+    stand = round(np.std(array_numbers), 2)
+
+    print(f"Average: {average:.2f}")
+    print(f"Standard deviation: {stand:.2f}")
+
+    return(average, stand)
+
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
