@@ -46,11 +46,17 @@ Exemple:
 
 
 def mult_recursive(value, times):
-    # Write here your code
-    pass
-
+    """ Javier Líndez
+        12/11/2026
+        Multiplicación recursiva
+    """
+    if times > 1:
+        return value + mult_recursive(value, times - 1)
+    else:
+        return value
+    
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-#if __name__ == "__main__":
-#    print("Must print 6: ", mult_recursive(2, 3))
+# if __name__ == "__main__":
+# print("Must print 6: ", mult_recursive(2, 3))
